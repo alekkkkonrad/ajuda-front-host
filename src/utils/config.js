@@ -1,5 +1,5 @@
-export const api = `${process.env.URL}/api`
-export const uploads = `${process.env.URL}/uploads`
+export const api = "https://ajudamais-back.herokuapp.com/api"
+export const uploads = "https://ajudamais-back.herokuapp.com/uploads"
 
 export const requestConfig = (method, data, token = null, image = null) => {
 
