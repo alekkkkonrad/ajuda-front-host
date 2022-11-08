@@ -1,13 +1,11 @@
 const express = require('express')
+const {resolve} = require('path')
 const app = express()
 
-const baseDir = `${__dirname}/build/`
+app.use('/', express.static(resolve(__dirname, './build')))
 
-app.use(express.static(`${baseDir}`))
-app.get('*', (req, res) => {
-    res.sendFile('index.html', {root: baseDir})
+app.listen(process.env.PORT || 3000, (err) => {
+    if(err) { return console.log(err)}
+
+    console.log('everything is okay')
 })
-
-const port = process.env.URL || 3000
-
-app.listen(port, () => console.log(`Servidor subiu com sucesso em http://localhost:${port}`))
