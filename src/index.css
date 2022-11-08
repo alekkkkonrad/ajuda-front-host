@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6fcff;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+.btn_global{
+  color: #fff;
+  background-color: #b90707;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  transition: .8s;
+}
+.btn_global:hover{
+  background-color: #a70404b9;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+input:focus{
+  outline: none;
+}
+.row{
+  grid-column: span 2;
+}

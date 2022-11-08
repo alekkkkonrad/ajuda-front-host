@@ -1,0 +1,67 @@
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, .15) 0px -1px 10px 0px;
+}
+.user_info{
+    width: 220px;
+    grid-row: span 2;
+}
+.user_info img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.primary{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.primary span:last-child{
+    font-weight: bold;
+}
+.tipos{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    gap: 5px;
+}
+.textarea{
+    max-width: 450px;
+    grid-column: span 2;
+    margin-bottom: 20px;
+    font-family: "Montserrat";
+}
+.textarea div{
+   overflow-wrap: break-word;
+   font-family: "Montserrat";
+}
+.btn{
+   grid-column: span 3;
+   display: flex;
+   justify-content: center;
+}
+.btn button, .btn a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    color: white;
+    background-color: #b90707;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .6s;
+    font-family: "Montserrat";
+}
+.btn button:hover, .btn a:hover{
+    background-color: #a70404b9;
+}
+.btn svg{
+    font-size: 16px;
+}
+

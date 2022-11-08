@@ -1,0 +1,43 @@
+.container_Log{
+    max-width: 70%;
+    margin: 70px auto;
+    display: flex;
+    align-items: center;
+}
+.container_Log a{
+    text-align: end;
+}
+.img_Log{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.img_Log img{
+    width: 60%;
+}
+.form_Log{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form_Log label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form_Log span{
+    font-weight: bold;
+}
+.form_Log input{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 5px 2px;
+}
+.form_Log a:hover{
+    text-decoration: underline;
+}

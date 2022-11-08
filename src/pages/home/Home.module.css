@@ -1,0 +1,33 @@
+.container {
+    max-width: 80vw;
+    min-height: 80%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 2em;
+}
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+}
+.subcontainer a {
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+.container img {
+    max-width: 100%;
+    margin-right: 2em;
+}
+.content p {
+    font-size: 1.8em;
+}
+.content span {
+    color: red;
+    font-weight: bold;
+}
+.action {
+    margin-top: 2em;
+}

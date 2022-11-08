@@ -1,0 +1,25 @@
+.searchForm{
+    display: flex;
+    align-items: center;
+    min-width: max-content;
+    justify-content: center;
+}
+.searchForm svg{
+    position: relative;
+    top: -9px;
+    left: 25px;
+}
+.searchForm input{
+    width: 300px;
+    height: 30px;
+    padding-left: 30px;
+
+    font-family: "Montserrat";
+    font-size: 16px;
+
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+    margin-right: 18px;
+    margin-bottom: 20px;
+}

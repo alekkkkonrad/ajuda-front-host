@@ -1,0 +1,85 @@
+.container_Edit{
+    max-width: 60%;
+    margin: 20px auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.form_containerEdit{
+    display: flex;
+    flex-direction: column;
+}
+.img_Edit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.image_Edit{
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
+.form_Edit{
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+}
+.form_Edit label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form_Edit span{
+    font-weight: bold;
+}
+.form_Edit input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 0 5px;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.form_Edit input[type='file']{
+    border: none;
+}
+.form_Edit select{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 0 5px;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.actions{
+    display: flex;
+    flex-direction: column;
+}
+.trade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+.trade button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    transition: .4s;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+.trade button:hover{
+    background-color: rgba(0, 0, 0, 0.300);
+}

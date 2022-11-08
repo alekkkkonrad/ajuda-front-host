@@ -1,0 +1,83 @@
+.about_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.wrapper {
+    max-width: 600px;
+    width: 100%;
+}
+
+.wrapper h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.wrapper input {
+    display: none;
+}
+
+.wrapper label {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border: 3px solid #3E474F;
+    user-select: none;
+}
+
+.wrapper label div:first-child {
+    width: 100%;
+    line-height: 45px;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.cross{
+    margin-right:15px;
+    margin-top:3px;
+}
+.cross:before, .cross:after {
+    content: '';
+    border-top: 2px solid #3E474F;
+    width: 15px;
+    display: block;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+.cross:after {
+    transform: rotate(90deg);
+    margin-top: -2px;
+}
+.content {
+    box-sizing: border-box;
+    font-size: 0.9em;
+    margin: 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, .5s;
+}
+input:checked ~ .content {
+    max-height: 400px;
+    transition: max-height, 1s;
+}
+input:checked ~ label .cross:before {
+    transform: rotate(180deg);
+}
+input:checked ~ label .cross:after {
+    transform: rotate(0deg);
+}
+
+.content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 600;
+}
+.content h3{
+    margin-bottom: 5px;
+}

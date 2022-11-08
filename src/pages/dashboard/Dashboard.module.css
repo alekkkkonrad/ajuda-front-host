@@ -1,0 +1,70 @@
+.container{
+    max-width: 90vw;
+    min-height: 80%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.content{
+    width: 60%;
+}
+.pedidos_header span{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.pedidos_header{
+    padding: 5px;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1em;
+}
+.pedido_row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+    align-items: center;
+    margin-bottom: .5em;
+    padding: 5px;
+}
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+}
+.actions a{
+    padding: 5px;
+}
+.actions a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .6s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.actions button{
+    width: max-content;
+    height: max-content;
+    font-size: 15px;
+    font-weight: normal;
+}
+.nopedidos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.nopedidos p{
+    text-align: center;
+}
+.nopedidos a{
+
+}
