@@ -1,7 +1,5 @@
 import styles from './EditProfile.module.css'
 
-import { uploads } from '../../utils/config'
-
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch} from 'react-redux'
 import { useAuth } from '../../hooks/useAuth'
@@ -131,7 +129,7 @@ const EditProfile = () => {
                 <img
                     className={styles.image_Edit}
                     src={
-                        previewImage ? URL.createObjectURL(previewImage) : `${uploads}/users/${user.profileImage}`
+                        previewImage ? URL.createObjectURL(previewImage) : user.profileImage
                     }
                     alt={user.nome}
                 />
