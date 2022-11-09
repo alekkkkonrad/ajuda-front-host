@@ -2,7 +2,6 @@ import styles from './CardPedido.module.css'
 import { AiFillPhone } from "react-icons/ai";
 import { useAuth } from '../../hooks/useAuth'
 import { Link } from 'react-router-dom';
-import { uploads } from '../../utils/config';
 
 const CardPedido = ({id, email, url, username, local, tipos, desc, contact}) => {
 
@@ -15,7 +14,7 @@ const CardPedido = ({id, email, url, username, local, tipos, desc, contact}) => 
   return (
     <div className={styles.card}>
         <div className={styles.user_info}>
-            <img src={`${uploads}/users/${url}`} alt="perfil img" />
+            <img src={url} alt="perfil img" />
         </div>
         <div className={styles.primary}>
             <span>{username}</span>

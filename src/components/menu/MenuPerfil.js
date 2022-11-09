@@ -1,6 +1,5 @@
 import React from 'react'
 import './MenuPerfil.css'
-import { uploads } from '../../utils/config';
 //ICONS
 import { FiLogOut } from "react-icons/fi";
 import { BsFillPencilFill, BsClipboardPlus } from "react-icons/bs";
@@ -51,7 +50,7 @@ const MenuPerfil = () => {
           <div className='menu_box_content'>
             <div className='menu_box_content_img'>
               <img
-                src={`${uploads}/users/${user.profileImage}`}
+                src={user.profileImage}
                 alt="perfil"
               />
               </div>
